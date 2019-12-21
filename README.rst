@@ -34,7 +34,7 @@ Example::
         image1 = StdImageField(upload_to='path/to/img') # works as ImageField
         image2 = StdImageField(upload_to='path/to/img', blank=True) # can be deleted throwgh admin
         image3 = StdImageField(upload_to='path/to/img', variations={'thumbnail': (100, 75)}) # creates a thumbnail resized to maximum size to fit a 100x75 area
-        image4 = StdImageField(upload_to='path/to/img', variations={'thumbnail': (100, 100, True}) # creates a thumbnail resized to 100x100 croping if necessary
+        image4 = StdImageField(upload_to='path/to/img', variations={'thumbnail': (100, 100, True)}) # creates a thumbnail resized to 100x100 croping if necessary
 
         image_all = StdImageField(upload_to='path/to/img', blank=True, variations={'large': (640, 480), 'thumbnail': (100, 100, True)}) # all previous features in one declaration
 
